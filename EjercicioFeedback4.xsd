@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="tabla">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="albumes" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titulo" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="grupo" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="año" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+                        <xs:element name="singles" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="single" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>                       
+                    </xs:sequence>
+                    <xs:attribute name="formato" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="cd"/>
+                                <xs:enumeration value="casette"/>
+                                <xs:enumeration value="vinilo"/>
+                                <xs:enumeration value="mp3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="idioma" use="optional">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="es"/>
+                                <xs:enumeration value="en"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+  
+</xs:schema>

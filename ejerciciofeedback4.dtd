@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT tabla (albumes+)>
+<!ELEMENT albumes (titulo, grupo, año?, singles?)>
+<!ATTLIST albumes formato ( cd | casette | vinilo | mp3 ) #REQUIRED>
+<!ATTLIST albumes idioma CDATA #IMPLIED>
+<!ELEMENT singles (single*)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT grupo (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT single (#PCDATA)>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE tabla SYSTEM "ejerciciofeedback.dtd">-->
+<?xml-stylesheet href="estiloxml.xsl" type="text/xsl"?>
+<tabla xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="EjercicioFeedback4.xsd">
+    <albumes formato="cd" idioma="en">
+        <titulo>Violator</titulo>
+        <grupo>Depeche Mode</grupo>
+        <año>1990</año>
+        <singles>
+            <single>Personal Jesus</single>
+            <single>Enjoy the</single>
+            <single>Policy of Truth</single>
+            <single>World in my eyes</single>
+        </singles>
+    </albumes>
+    <albumes formato="cd" idioma="en">
+        <titulo>OK Computer</titulo>
+        <grupo>Radiohead</grupo>
+        <año>1997</año>
+        <singles>
+            <single>Paranoid Android</single>
+            <single>Karma Police</single>
+            <single>No surprises</single>
+        </singles>
+    </albumes>
+    <albumes formato="vinilo" idioma="es">
+        <titulo>Como la cabeza al sombrero</titulo>
+        <grupo>El último de la fila</grupo>
+        <año>1988</año>
+        <singles>
+        </singles>
+    </albumes>
+    <albumes formato="mp3" idioma="es">
+        <titulo>Hacia lo Salvaje</titulo>
+        <grupo>Amaral</grupo>
+        <año>2011</año>
+        <singles>
+            <single>Hacia lo Salvaje</single>
+            <single>Cuando suba la marea</single>
+            <single>Hoy es el principio del final</single>
+        </singles>
+    </albumes>
+</tabla>
